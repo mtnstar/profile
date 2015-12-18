@@ -14,10 +14,18 @@ findup() {
   fi
 }
 
-cdg() {
-  dir=$(findup .git)
+cdup() {
+  dir=$(findup $1)
   if [[ -n "$dir" ]]; then
     dir=$(dirname $dir)
     cd $dir
   fi
+}
+
+cdg() {
+  cdup .git
+}
+
+cdr() {
+  cdup Rakefile
 }
