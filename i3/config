@@ -200,8 +200,8 @@ exec_always --no-startup-id feh --bg-scale ~/Pictures/i3_background.jpg
 exec synclient MaxTapTime=0
 
 # autostart programs
-exec nextcloud
-exec --no-startup-id i3-msg 'workspace 2:www-dev; exec chromium-browser'
-exec --no-startup-id i3-msg 'workspace 5:console; exec nautilus --no-desktop'
+exec pidgin
+exec --no-startup-id i3-msg 'workspace 5:console; exec nemo'
 exec --no-startup-id i3-msg 'workspace 9; exec pavucontrol'
 exec --no-startup-id i3-msg 'workspace 9; exec arandr'
+exec --no-startup-id i3-msg 'workspace 2:www-dev; exec chromium-browser'
