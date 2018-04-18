@@ -1,4 +1,9 @@
-[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+[/]
+menu-accelerator-enabled=false
+schema-version=uint32 3
+default-show-menubar=false
+
+[profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 background-color='rgb(0,43,54)'
 login-shell=true
 cursor-shape='block'
