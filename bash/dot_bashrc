@@ -133,9 +133,9 @@ do
 done
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/nextcloud/ps/config/bin" # Add user scripts
 
 source <(oc completion bash)
 source <(kubectl completion bash)
 
-export FIREFOX_PATH=/opt/firefox/firefox 
 export CHROME_BIN=/usr/bin/chromium-browser
