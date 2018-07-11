@@ -157,7 +157,7 @@ bar {
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5% #decrease sound volume
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
@@ -180,9 +180,6 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # start network manager
 exec --no-startup-id nm-applet
-
-# pidgin
-for_window [class="^Pidgin$" window_role="^conversation$"] resize grow width 0 px or 30 ppt
 
 # compton to fix vsync problem
 exec --no-startup-id compton -cCGb --backend glx --vsync opengl
