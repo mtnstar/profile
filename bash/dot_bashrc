@@ -128,8 +128,6 @@ fi
 # prompt
 PS1='\[\033]0; \w`__git_ps1`\007\]\[\e[0;32m\]\[\e[m\]\[\e[1;34m\]\w\[\033[0;31m\]`__git_ps1`\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]'
 
-export RAILS_DB_PASSWORD=go
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
