@@ -137,9 +137,13 @@ do
 done
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/nextcloud/ps/config/bin" # Add user scripts
+export PATH="$PATH:$HOME/nextcloud/ps-privat/config/bin" # Add user scripts
 
 source <(oc completion bash)
 source <(kubectl completion bash)
 
 export CHROME_BIN=/usr/bin/chromium-browser
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
