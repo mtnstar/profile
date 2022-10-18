@@ -2,7 +2,7 @@
 BackgroundMode=TERMINAL_BACKGROUND_IMAGE
 BackgroundImageFile=/home/mtnstar/git/setup/profile/terminal-bg.jpg
 BackgroundImageStyle=TERMINAL_BACKGROUND_STYLE_CENTERED
-BackgroundImageShading=0,850000
+BackgroundImageShading=0.840000
 ColorForeground=#839496
 ColorBackground=#002b36
 ColorCursor=#93a1a1
