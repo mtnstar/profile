@@ -113,7 +113,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias doc='docker-compose'
+alias doc='docker compose'
+alias docker-compose='docker compose'
 
 export rvm_path="$HOME/.rvm"
 if [[ -s "$rvm_path/environments/default" ]]
@@ -144,3 +145,5 @@ export PATH="$HOME/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.b
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias vim='nvim'
