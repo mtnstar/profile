@@ -39,5 +39,3 @@ MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=TRUE
 TabActivityColor=#dc322f
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
-FontName=Monospace Bold 12
-
