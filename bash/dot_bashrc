@@ -74,8 +74,8 @@ esac
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
+    #test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    #alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -137,8 +137,15 @@ done
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/nextcloud/ps-privat/config/bin" # Add user scripts
 
-source <(oc completion bash)
-source <(kubectl completion bash)
+if command -v oc &> /dev/null
+then
+  source <(oc completion bash)
+fi
+
+if command -v kubectl &> /dev/null
+then
+  source <(kubectl completion bash)
+fi
 
 export CHROME_BIN=/usr/bin/chromium-browser
 
