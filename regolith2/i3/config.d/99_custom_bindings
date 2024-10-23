@@ -1,2 +1,0 @@
-bindsym $mod+m move workspace to output right
-bindsym Print exec flameshot gui
