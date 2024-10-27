@@ -116,7 +116,7 @@ fi
 alias doc='docker compose'
 alias docker-compose='docker compose'
 
-export rvm_path="$HOME/.rvm"
+export rvm_path="/usr/share/rvm"
 if [[ -s "$rvm_path/environments/default" ]]
 then source "$rvm_path/environments/default"
 else PATH="$PATH:$rvm_path/bin"
