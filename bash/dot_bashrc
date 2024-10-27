@@ -102,6 +102,11 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [[ -s "/opt/asdf-vm/asdf.sh" ]]
+then
+  source /opt/asdf-vm/asdf.sh
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -115,12 +120,6 @@ fi
 
 alias doc='docker compose'
 alias docker-compose='docker compose'
-
-export rvm_path="/usr/share/rvm"
-if [[ -s "$rvm_path/environments/default" ]]
-then source "$rvm_path/environments/default"
-else PATH="$PATH:$rvm_path/bin"
-fi
 
 if [ -f /usr/share/git/completion/git-prompt.sh ]; then
     . /usr/share/git/completion/git-prompt.sh
