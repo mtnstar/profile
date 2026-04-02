@@ -6,3 +6,5 @@ source ~/.local/share/omarchy/default/bash/init
 source ~/.local/share/omarchy/default/bash/envs
 [[ $- == *i* ]] && bind -f ~/.local/share/omarchy/default/bash/inputrc
 source ~/git/setup/profile/bash/bin/findup.sh
+
+source <(curl -s https://raw.githubusercontent.com/mtnsoft/mtn-shell/refs/heads/main/source.sh)
