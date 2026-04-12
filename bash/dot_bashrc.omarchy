@@ -7,3 +7,7 @@ source ~/.local/share/omarchy/default/bash/envs
 source ~/git/setup/profile/bash/bin/findup.sh
 
 source <(curl -s https://raw.githubusercontent.com/mtnsoft/mtn-shell/refs/heads/main/source.sh)
+alias dde='/home/mtnstar/git/whatwedo/dde/dde.sh'
+
+alias p="podman"
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
