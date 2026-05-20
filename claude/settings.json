@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git branch *)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Edit(./.env)",
+      "Edit(./.env.*)",
+      "Read(*.pem)",
+      "Read(*.key)",
+      "Read(~/.ssh/**)"
+    ],
+    "defaultMode": "default"
+  },
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true,
+    "allowUnsandboxedCommands": false,
+    "network": {
+      "allowedDomains": [
+        "github.com",
+        "*.github.com",
+        "dev.whatwedo.ch",
+        "*.npmjs.org",
+        "registry.yarnpkg.com",
+        "pypi.org",
+        "files.pythonhosted.org",
+        "crates.io",
+        "*.crates.io"
+      ]
+    },
+    "filesystem": {
+      "denyRead": [
+        "~/.ssh",
+        "~/.gnupg",
+        "~/.aws",
+        "~/.config/1Password"
+      ]
+    }
+  },
+  "alwaysThinkingEnabled": true,
+  "effortLevel": "xhigh"
+}
