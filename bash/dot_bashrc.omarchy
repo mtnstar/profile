@@ -8,7 +8,7 @@ source ~/git/setup/profile/bash/bin/findup.sh
 source ~/git/setup/profile/bash/bin/nitrokey.sh
 source ~/git/setup/profile/bash/bin/container_aliases.sh
 
-source <(curl -s https://raw.githubusercontent.com/mtnsoft/mtn-shell/refs/heads/main/source.sh)
+source ~/git/mtn/mtn-shell/source.sh
 
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
